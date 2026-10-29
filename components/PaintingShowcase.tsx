@@ -49,7 +49,7 @@ export function PaintingShowcase({
   });
 
   return (
-    <section id="paintings" className="relative py-20 sm:py-28 px-4 sm:px-8 max-w-7xl mx-auto">
+    <section id="paintings" className="section-aura aura-paintings relative py-20 sm:py-28 px-4 sm:px-8 max-w-7xl mx-auto">
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16 border-b border-stone-800/80 pb-8">
         <div>

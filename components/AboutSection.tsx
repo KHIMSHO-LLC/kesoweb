@@ -22,7 +22,7 @@ export function AboutSection({ onOpenInquiry }: AboutSectionProps) {
   };
 
   return (
-    <section id="about" className="relative py-24 sm:py-32 px-4 sm:px-8 max-w-7xl mx-auto border-t border-stone-800/80">
+    <section id="about" className="section-aura aura-about relative py-24 sm:py-32 px-4 sm:px-8 max-w-7xl mx-auto border-t border-stone-800/80">
       {/* Editorial Artist Feature */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
         {/* Left Column: Portrait & Studio Journal */}

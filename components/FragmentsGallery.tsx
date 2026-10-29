@@ -26,7 +26,7 @@ export function FragmentsGallery() {
   };
 
   return (
-    <section id="fragments" className="relative py-20 sm:py-28 px-4 sm:px-8 max-w-7xl mx-auto border-t border-stone-800/80">
+    <section id="fragments" className="section-aura aura-fragments relative py-20 sm:py-28 px-4 sm:px-8 max-w-7xl mx-auto border-t border-stone-800/80">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 border-b border-stone-800/80 pb-8">
         <div>

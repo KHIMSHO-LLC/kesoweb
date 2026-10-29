@@ -14,6 +14,50 @@ body {
   overflow-x: hidden;
 }
 
+.section-aura {
+  isolation: isolate;
+}
+
+.section-aura::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 18% 30%, var(--aura-glow), transparent 58%),
+    linear-gradient(180deg, var(--aura-base), transparent 45%, var(--aura-base));
+}
+
+.aura-paintings {
+  --aura-glow: rgba(36, 91, 150, 0.3);
+  --aura-base: rgba(12, 27, 49, 0.52);
+}
+
+.aura-notebooks {
+  --aura-glow: rgba(174, 112, 52, 0.24);
+  --aura-base: rgba(48, 34, 28, 0.4);
+}
+
+.aura-fragments {
+  --aura-glow: rgba(115, 71, 139, 0.26);
+  --aura-base: rgba(36, 27, 49, 0.45);
+}
+
+.aura-gatherings {
+  --aura-glow: rgba(185, 94, 55, 0.28);
+  --aura-base: rgba(51, 30, 28, 0.44);
+}
+
+.aura-about {
+  --aura-glow: rgba(54, 126, 111, 0.25);
+  --aura-base: rgba(20, 42, 42, 0.46);
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
