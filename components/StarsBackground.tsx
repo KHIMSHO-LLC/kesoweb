@@ -51,7 +51,7 @@ export function StarsBackground() {
         size: 6 + rand() * 22, // 6px to 28px
         rotation: rand() * 360,
         pathIndex: Math.floor(rand() * STAR_PATHS.length),
-        opacity: 0.03 + rand() * 0.09, // Very subtle: 3% to 12%
+        opacity: 0.05 + rand() * 0.12, // Subtle golden glow: 5% to 17%
         delay: rand() * 8,
         duration: 6 + rand() * 10, // 6-16s twinkle cycle
       });
@@ -95,8 +95,8 @@ export function StarsBackground() {
           >
             <path
               d={STAR_PATHS[star.pathIndex]}
-              fill="#F5F2EB"
-              stroke="#F5F2EB"
+              fill="#E8D5A3"
+              stroke="#E8D5A3"
               strokeWidth="0.3"
               strokeLinejoin="round"
             />
@@ -106,11 +106,11 @@ export function StarsBackground() {
 
       {/* A few larger, even more subtle "ghost" stars for depth */}
       {[
-        { x: 8, y: 15, s: 50, r: 20, o: 0.025 },
-        { x: 78, y: 35, s: 45, r: 140, o: 0.02 },
-        { x: 45, y: 65, s: 55, r: 70, o: 0.022 },
-        { x: 92, y: 80, s: 40, r: 200, o: 0.018 },
-        { x: 20, y: 85, s: 48, r: 310, o: 0.02 },
+        { x: 8, y: 15, s: 50, r: 20, o: 0.04 },
+        { x: 78, y: 35, s: 45, r: 140, o: 0.035 },
+        { x: 45, y: 65, s: 55, r: 70, o: 0.038 },
+        { x: 92, y: 80, s: 40, r: 200, o: 0.03 },
+        { x: 20, y: 85, s: 48, r: 310, o: 0.035 },
       ].map((ghost, i) => (
         <motion.div
           key={`ghost-${i}`}
@@ -139,8 +139,8 @@ export function StarsBackground() {
           >
             <path
               d={STAR_PATHS[1]}
-              fill="#F5F2EB"
-              stroke="#F5F2EB"
+              fill="#E8D5A3"
+              stroke="#E8D5A3"
               strokeWidth="0.2"
               strokeLinejoin="round"
             />
