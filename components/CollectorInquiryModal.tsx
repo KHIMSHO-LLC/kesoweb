@@ -196,12 +196,12 @@ export function CollectorInquiryModal({
                 <p className="text-[11px] text-stone-500 font-mono">
                   Prefer direct contact? Reach Keso on Instagram{" "}
                   <a
-                    href="https://instagram.com/platform888"
+                    href="https://www.instagram.com/platform.888/"
                     target="_blank"
                     rel="noreferrer"
                     className="text-amber-300 hover:underline inline-flex items-center gap-1 font-semibold"
                   >
-                    @platform888 <Instagram className="w-3 h-3" />
+                    @platform.888 <Instagram className="w-3 h-3" />
                   </a>
                 </p>
               </div>

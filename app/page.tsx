@@ -11,6 +11,7 @@ import { AboutSection } from "@/components/AboutSection";
 import { PaintingModal } from "@/components/PaintingModal";
 import { CollectorInquiryModal } from "@/components/CollectorInquiryModal";
 import { GrainOverlay } from "@/components/GrainOverlay";
+import { StarsBackground } from "@/components/StarsBackground";
 import { CustomCursor } from "@/components/CustomCursor";
 import { MAIN_PAINTINGS, Painting } from "@/data/artworks";
 import { AnimatePresence, motion } from "framer-motion";
@@ -85,6 +86,9 @@ export default function Home() {
     <div className="relative min-h-screen bg-[#0d1322] text-[#F5F2EB] selection:bg-amber-300 selection:text-stone-950 font-sans overflow-x-hidden">
       {/* Tactile Analog Grain Overlay */}
       <GrainOverlay />
+
+      {/* Hand-drawn Stars Scattered Background */}
+      <StarsBackground />
 
       {/* Gentle Floating Celestial Cursor */}
       <CustomCursor />

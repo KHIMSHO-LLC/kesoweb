@@ -120,7 +120,7 @@ export const MAIN_PAINTINGS: Painting[] = [
     id: "white-plate",
     title: "White Plate",
     year: "2024",
-    dimensions: "24 × 18 cm",
+    dimensions: "18 × 24 cm",
     medium: "Acrylic on canvas",
     description: "I wonder if I still remember the depth, the weightlessness, the quiet of belonging somewhere vast. How did I end up being so far away from it?",
     image: "/paintings/white-plate.jpg",

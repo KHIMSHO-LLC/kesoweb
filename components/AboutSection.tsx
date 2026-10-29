@@ -102,13 +102,13 @@ export function AboutSection({ onOpenInquiry }: AboutSectionProps) {
           {/* Social & Inquiries Bar */}
           <div className="pt-6 border-t border-stone-800/80 flex flex-wrap items-center gap-4">
             <a
-              href="https://instagram.com/platform888"
+              href="https://www.instagram.com/platform.888/"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-stone-900 border border-stone-700/80 hover:border-amber-400/60 text-stone-200 hover:text-amber-200 text-xs font-mono uppercase tracking-widest transition-all"
             >
               <Instagram className="w-4 h-4 text-amber-300" />
-              <span>@platform888</span>
+              <span>@platform.888</span>
             </a>
 
             <button
@@ -187,12 +187,12 @@ export function AboutSection({ onOpenInquiry }: AboutSectionProps) {
         </div>
         <div className="flex items-center gap-6">
           <a
-            href="https://instagram.com/platform888"
+            href="https://www.instagram.com/platform.888/"
             target="_blank"
             rel="noreferrer"
             className="hover:text-amber-300 transition-colors"
           >
-            Instagram: @platform888
+            Instagram: @platform.888
           </a>
           <span>Barnab Gallery, Kutaisi</span>
         </div>
