@@ -9,7 +9,7 @@ import inventory from "@/data/gallery-inventory.json";
 export function NotebooksGallery() {
   const notebooks = inventory.notebooks || [];
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
-  const [displayCount, setDisplayCount] = useState<number>(18);
+  const [displayCount, setDisplayCount] = useState<number>(12);
 
   const handleNext = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -68,6 +68,7 @@ export function NotebooksGallery() {
               src={`/notebooks/${filename}`}
               alt={`Notebook Study #${idx + 1}`}
               fill
+              loading="lazy"
               className="object-cover group-hover:scale-105 transition-transform duration-500"
               sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
             />

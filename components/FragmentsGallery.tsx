@@ -9,7 +9,7 @@ import inventory from "@/data/gallery-inventory.json";
 export function FragmentsGallery() {
   const writings = inventory.writings || [];
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
-  const [visibleCount, setVisibleCount] = useState<number>(16);
+  const [visibleCount, setVisibleCount] = useState<number>(12);
 
   const handleNext = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -73,7 +73,8 @@ export function FragmentsGallery() {
               src={`/writings/${filename}`}
               alt={`Fragment #${idx + 1}`}
               fill
-              className="object-cover group-hover:scale-105 transition-transform duration-500 filter contrast-[1.03]"
+              loading="lazy"
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
               sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
             />
             <div className="absolute inset-0 bg-stone-950/10 group-hover:bg-transparent transition-colors" />
